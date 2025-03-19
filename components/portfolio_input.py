@@ -49,11 +49,11 @@ def show_input_section():
         
         # Add sample CSV structure as a DataFrame
         sample_data = {
-            'Symbol': ['AAPL', 'MSFT'],
-            'Date': ['2024-03-15', '2024-03-14'],
-            'Type': ['BUY', 'SELL'],
-            'Quantity': [10, 5],
-            'Price': [172.62, 425.22]
+            'Symbol': ['AAPL', 'MSFT', 'AAPL'],
+            'Date': ['2024-03-14', '2024-03-15', '2025-01-01'],
+            'Type': ['BUY', 'BUY', 'SELL'],
+            'Quantity': [10, 5, 6],
+            'Price': [172.62, 425.22, 243.55]
         }
         sample_df = pd.DataFrame(sample_data)
         st.write("Sample Format:")
