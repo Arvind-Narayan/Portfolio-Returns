@@ -1,0 +1,57 @@
+Title: Build a Streamlit Stock Portfolio Performance Tracker with XIRR Calculation
+Objective: Develop a Streamlit application that allows users to track the performance of their US stock portfolio by inputting transaction details and calculating the XIRR for both the overall portfolio and individual stocks.
+Detailed Requirements:
+Streamlit Application:
+
+
+The application should be developed using the Streamlit library.
+It should provide a user-friendly interface for inputting and displaying stock portfolio data.
+Input Functionality:
+
+
+Implement an input form that allows users to enter the following transaction details:
+Ticker Symbol (String): The stock's ticker symbol (e.g., AAPL, GOOG).
+Transaction Date (Date): The date of the transaction.
+Quantity (Integer): The number of shares bought or sold.
+Price (Float): The price per share at the time of the transaction.
+Transaction Type (Dropdown): A selection of "Buy" or "Sell."
+Provide a mechanism to add multiple transactions.
+Provide a button to process the transactions.
+Stock Price API Integration:
+
+
+Integrate with a reliable stock price API (e.g., Alpha Vantage, Yahoo Finance API, or similar) to fetch historical stock prices.
+Use the API to retrieve the current and historical prices necessary for XIRR calculation.
+Handle API errors gracefully (e.g., display error messages if the API is unavailable or returns an error).
+Data Storage and Management:
+
+
+Store the entered transaction data in a suitable data structure (e.g., a Pandas DataFrame).
+Ensure that the data is organized and easily accessible for calculations.
+XIRR Calculation:
+
+
+Implement the XIRR (Extended Internal Rate of Return) calculation for both:
+Overall Portfolio: Calculate the XIRR for the entire portfolio based on all transactions.
+Individual Stocks: Calculate the XIRR for each individual stock held in the portfolio.
+Handle cases where there are insufficient transactions or invalid data for XIRR calculation (e.g., display appropriate error messages).
+Use the numpy_financial library, or similar library, to calculate the XIRR.
+Output and Visualization:
+
+
+Display the calculated XIRR values for the overall portfolio and individual stocks in a clear and concise manner.
+Display the transaction table in a streamlit dataframe.
+Optionally, provide visualizations (e.g., line charts) to show the portfolio's performance over time.
+Error Handling:
+
+
+Implement robust error handling to catch and handle potential errors, such as:
+Invalid input data (e.g., non-numeric values).
+API errors.
+XIRR calculation errors.
+Display informative error messages to the user.
+User Interface:
+
+
+Design a clean and intuitive user interface using Streamlit components.
+Organize the input form, output display, and visualizations logically.
